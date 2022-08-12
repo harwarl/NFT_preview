@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: Outfit;
+        src: url(Outfit-VariableFont_wght.ttf);
+    }
+
+    body{
+        font-family: Outfit;
+        background: hsl(217, 54%, 11%);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        background: hsl(216, 50%, 16%);
+        color: white;
+        width: 220px;
+        height: 380px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    img{
+        width: 195px;
+        height: 195px;
+        border-radius: 10px;
+        align-self: center;
+        margin-top: 15px;
+    }
+
+    #info {
+        margin: 10px 15px 0 15px;
+        color: hsl(215, 51%, 70%);
+        font-weight: 300;
+    }
+
+    #Equilibrum-head{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 10px 15px 0 15px;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+
+    #Equilibrum-head:hover{
+      color:hsl(178, 100%, 50%);
+    }
+
+    .eth-amount-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .amount-flex{
+        display: flex;
+        margin: 0 15px;
+    }
+
+    .amount-flex p{
+        color: hsl(178, 100%, 50%);
+    }
+
+    .amount-flex svg{
+        margin-top: 10px;
+        margin-right: 3px;
+    }
+
+    .days-left{
+        display: flex;
+        margin: 0 15px;
+    }
+
+    .days-left svg{
+        margin-top: 10px;
+        margin-right: 3px;
+    }
+
+    #line{
+        border-bottom: 1px solid hsl(215, 32%, 27%);
+        margin: 3px 10px 0 10px;
+    }
+
+    .profile{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+    }
+
+    .profile img{
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .profile p{
+        margin-top: 15px;
+        color: hsl(215, 51%, 70%);
+    }
+
+    .profile span{
+        color:hsl(0, 0%, 100%);
+        font-weight: 400;
+    }
+
+    .profile span:hover{
+      color: hsl(178, 100%, 50%);
+      cursor:pointer;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../images/image-equilibrium.jpg" alt="Image Equilibrium">
+
+    <p id="Equilibrum-head">Equilibrium #3429</p>
+    <p id="info">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="eth-amount-flex">
+      <div class="amount-flex">
+        <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+        <p>0.041 ETH</p>
+      </div>
+      <div class="days-left">
+        <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+        <p>3 days left</p>
+      </div>
+    </div>
+
+    <div id="line"></div>
+
+    <div class="profile">
+      <img src="../images/image-avatar.png" alt="image-avatar">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
+
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oduwale Awwal</a>.
+  </div>
+</body>
+</html>
